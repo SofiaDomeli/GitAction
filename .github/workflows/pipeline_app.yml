@@ -28,6 +28,6 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run coverage app.py
-      run: coverage run app_test
+      run: coverage run -m app_test
     - name: Get coverage report
-      run: coverage report
+      run: coverage report -m
