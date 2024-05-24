@@ -5,5 +5,9 @@ app = Flask(__name__)
 def devops():
  return '<center><h1><font color=red>Germinare Tech, EU AMO DEVOPS</center>'
 
+@app.route('/Sofia')
+def devops():
+ return '<center><h1><font color=red>Germinare Tech, EU !AMO DEVOPS</center>'
+
 if __name__ == '__main__':
  app.run(debug=True, host='0.0.0.0')
