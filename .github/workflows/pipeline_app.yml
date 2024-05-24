@@ -30,4 +30,4 @@ jobs:
     - name: Run coverage app.py
       run: coverage run -m app_test
     - name: Get coverage report
-      run: coverage report -m
+      run: coverage report
