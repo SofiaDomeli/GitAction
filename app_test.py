@@ -9,6 +9,11 @@ class FlaskAppTests(unittest.TestCase):
    response = self.client.get('/')
    self.assertEqual(response.status_code, 200)
    self.assertIn(b'Germinare',response.data)
+
+  def test_devopsoso(self):
+   response = self.client.get('/Sofia')
+   self.assertEqual(response.status_code, 200)
+   self.assertIn(b'!AMO',response.data)
     
   if __name__ == '__main__':
    unittest.main()
