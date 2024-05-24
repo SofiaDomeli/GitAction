@@ -15,5 +15,5 @@ class FlaskAppTests(unittest.TestCase):
     self.assertEqual(response.status_code, 200)
     self.assertIn(b'!AMO',response.data)
     
-  if __name__ == '__main__':
-    unittest.main()
+if __name__ == '__main__':
+  unittest.main()
